@@ -75,13 +75,21 @@ WSGI_APPLICATION = 'oib.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': {},
+    'mdsi': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mdsi',
         'USER': 'mdsic',
         'PASSWORD': 'mdsic',
         'HOST': 'srsqlln01.uhbs.ch',
         #'PORT': '5432',
+    },
+    
+    'pep': { # cx_Oracle.makedsn("oraktp.uhbs.ch", 1524, "KTP")
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'oraktp.uhbs.ch/KTP',
+        'USER': 'buelow',
+        'PASSWORD': 'buelow',	
     }
 }
 
