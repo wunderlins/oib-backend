@@ -87,7 +87,7 @@ DATABASES = {
     
     'pep': { # cx_Oracle.makedsn("oraktp.uhbs.ch", 1524, "KTP")
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'oraktp.uhbs.ch/KTP',
+        'NAME': 'oraktp.uhbs.ch:1524/KTP',
         'USER': 'buelow',
         'PASSWORD': 'buelow',	
     }
